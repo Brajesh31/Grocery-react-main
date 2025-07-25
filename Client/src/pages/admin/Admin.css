@@ -1,0 +1,23 @@
+.admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .admin-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
