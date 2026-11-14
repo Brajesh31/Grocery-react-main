@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose an improvement to the grocery shopping experience or developer workflow.
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What user or maintainer problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the expected behaviour and affected application area.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Security, privacy, and accessibility impact
+      description: Consider accounts, orders, payments, uploads, keyboard access, and assistive technologies.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable conditions that would make the feature complete.
+    validations:
+      required: true
