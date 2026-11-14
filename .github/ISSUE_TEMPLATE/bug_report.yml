@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible defect in Grocery React.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, tokens, environment files, customer records, or production data. Report security vulnerabilities privately using SECURITY.md."
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Customer frontend (Client)
+        - Admin frontend (Client/react)
+        - Backend API (Server)
+        - Database or data model
+        - Documentation or tooling
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Runtime environment
+      description: OS, Node.js version, npm version, browser, and package directory.
+      placeholder: Windows 11, Node 20.x, npm 10.x, Chrome, Client/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal, numbered steps and sanitized commands.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Remove secrets, tokens, personal data, and private URLs before sharing.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed credentials and personal data from this report.
+          required: true
