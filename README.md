@@ -253,4 +253,4 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. Security issu
 
 The nested admin dashboard includes an existing MIT license and upstream template attribution. The backend package declares ISC metadata. A root license has not been added because the combined ownership and third-party licensing status requires review. Preserve all existing notices. See [Licensing](docs/LICENSING.md).
 
-Last updated: 2026-11-14 04:43 UTC
+Last updated: 2026-11-14 04:44 UTC
